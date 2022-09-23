@@ -1,0 +1,117 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}    
+
+/* NAVBAR */
+.navbar {
+    margin: 0 50px 0 50px;
+}
+
+.conteneur
+{
+    display: flex;
+    padding: 0 10px 30px 10px;
+}
+
+.conteneur2 {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.element {
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 50px;
+}
+.element:nth-child(1)
+{
+    flex: 6;
+}
+.element:nth-child(2)
+{
+    flex: 1;
+}
+
+.active {
+    color: #0065fc;
+    border-top: solid #0065fc;
+    text-align: center;
+}
+
+/* HEADER */
+.header {
+    margin: 20px 50px 20px 50px;
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+input {
+    font-size: 20px;
+}
+
+.position {
+    position: absolute;
+}
+
+.fa-sharp {
+    background: #f2f2f2;
+    border-radius: 10px 0 0 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f2f2f2;
+    position: relative;
+}
+
+input[type="text"] {
+    margin-left: 50px;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    padding: 0 25px;
+    border: 1px solid #f2f2f2;
+}
+
+input[type="submit"] {
+    left: -20px;
+    background: #0065fc;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #0065fc;
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* FOOTER */
+.page-footer {
+    background-color: #f2f2f2;
+    padding: 20px 250px 40px 55px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.lien {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding-top: 15px;
+}
