@@ -39,6 +39,7 @@
         <div>
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
+
             <!-- BARRE DE RECHERCHE -->
             <form>
                 <div class="form-container">
@@ -46,12 +47,16 @@
                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                     </div>
                     <input type="text" name="" value="Marseille, France">
-                    <input type="submit" name="" value="Rechercher">
+                    <input type="submit" name="" value="Rechercher" class="desktop">
+                    <button class="phone">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
             </form>
+
             <!-- FILTRES -->
             <div class="filtre">
-                <div>
+                <div class="p-filtre">
                     <p>Filtres</p>
                 </div>
                 <div class="btn-filtre">
@@ -60,15 +65,32 @@
                     </div>
                     <span>Economique</span>
                 </div>
-                <div>
-
+                <div class="btn-filtre">
+                    <div class="img-filtre">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <span>Familial</span>
                 </div>
-                <div>
-
+                <div class="btn-filtre">
+                    <div class="img-filtre">
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+                    </div>
+                    <span>Romantique</span>
                 </div>
-                <div>
-
+                <div class="btn-filtre">
+                    <div class="img-filtre">
+                        <i class="fa-sharp fa-solid fa-dog"></i>
+                    </div>
+                    <span>Animaux autorisés</span>
                 </div>
+            </div>
+
+            <!-- INFO -->
+            <div class="info">
+                <div class="img-info">
+                    <i class="fa-solid fa-info"></i>
+                </div>
+                <span>Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
         </div>
     </header>

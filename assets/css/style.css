@@ -28,10 +28,12 @@ body {
 .logo {
     height: 50px;
 }
+
 .element:nth-child(1)
 {
     flex: 6;
 }
+
 .element:nth-child(2)
 {
     flex: 1;
@@ -64,6 +66,10 @@ input {
     font-size: 20px;
 }
 
+.fa-location-dot {
+    color: black !important;
+}
+
 .position {
     border-radius: 10px 0 0 10px;
     width: 50px;
@@ -73,6 +79,14 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.desktop {
+    display: block;
+}
+
+.phone {
+    display: none;
 }
 
 input[type="text"] {
@@ -98,7 +112,7 @@ input[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 30px;
+    margin: 30px 0 30px 0;
 }
 
 .btn-filtre {
@@ -123,10 +137,27 @@ input[type="submit"] {
     margin-right: 20px;
 }
 
+.fa-solid {
+    color: blue;
+    font-size: 20px;
+}
 
+/* Info */
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.img-info {
+    margin-right: 10px;
+    padding: 2px 8px 2px 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+}
 
-
-
+.fa-info {
+    font-size: 13px;
+}
 
 
 

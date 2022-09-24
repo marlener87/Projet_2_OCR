@@ -1,6 +1,14 @@
 @media screen and (max-width: 992px) 
 {
+    /* Filtre */
+    .filtre {
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
 
+    .btn-filtre {
+        margin-bottom: 20px;
+    }
 
 
     /* FOOTER */
