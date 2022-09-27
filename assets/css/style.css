@@ -17,6 +17,7 @@ body {
 .conteneur2 {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     gap: 70px;
 }
 
@@ -39,11 +40,21 @@ body {
     flex: 1;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .active {
-    color: #0065fc;
+    
     border-top: solid #0065fc;
     text-align: center;
 }
+
+.lienActif {
+    color: #0065fc;
+}
+
 
 /* HEADER */
 .header {
@@ -126,6 +137,12 @@ input[type="submit"] {
     padding-right: 20px;
 }
 
+.btn-filtre:hover {
+    color: green;
+    font-style: italic;
+    font-size: 20px;
+}
+
 .img-filtre {
     display: flex;
     align-items: center;
@@ -159,7 +176,29 @@ input[type="submit"] {
     font-size: 13px;
 }
 
+/* Contenu principal */
+.card {
+    width: 250px; /*1*/
+    margin: 0px auto; /*2*/
+    padding: 10px;
+    background-color: #f2f2f2; /*3*/
+    border-radius: 25px;
+}
 
+.card-img {
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    /*5 - Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* FOOTER */
 .page-footer {
