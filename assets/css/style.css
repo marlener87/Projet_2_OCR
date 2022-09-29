@@ -82,7 +82,7 @@ input {
 }
 
 .position {
-    border-radius: 10px 0 0 10px;
+    border-radius: 17px 0 0 17px;
     width: 50px;
     height: 50px;
     border: 1px solid #f2f2f2;
@@ -114,7 +114,7 @@ input[type="submit"] {
     width: 150px;
     height: 50px;
     border: 1px solid #0065fc;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 17px 17px 0;
 }
 
 /* Filtres */
@@ -177,18 +177,53 @@ input[type="submit"] {
 }
 
 /* Contenu principal */
-.card {
-    width: 250px; /*1*/
-    margin: 0px auto; /*2*/
-    padding: 10px;
-    background-color: #f2f2f2; /*3*/
+.main {
+    margin: 50px 50px 20px 50px;
+}
+strong {
+    font-weight: bold;
+}
+
+#hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
     border-radius: 25px;
+    padding: 20px;
+    width: 60%;
+}
+
+.card-title {
+    padding-left: 3%;
+    margin-top: 25px;
+    margin-bottom: 11px;
+}
+
+.card-title-bottom {
+    padding-left: 3%;
+    margin: 0 0 30px 0;
+}
+
+.conteneur {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 230px;
+    height: 190px;
+    margin: 15px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .card-img {
     height: 110px;
     position: relative;
     overflow: hidden;
+    border-radius: 25px 25px 0 0;
 }
 
 .card-img img {
@@ -198,6 +233,36 @@ input[type="submit"] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.card-body {
+    text-align:start;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.nomHotel {
+    margin: 3%;
+    font-size: 18px;
+}
+
+.nuit {
+    margin: 3%;
+    font-size: 15px;
+}
+
+.star {
+    margin: 3%;
+}
+
+.star-blue {
+    color: #0065fc;
+    font-size: 80%;
+}
+
+.star-grey {
+    color: #f2f2f2;
+    font-size: 80%;
 }
 
 /* FOOTER */
