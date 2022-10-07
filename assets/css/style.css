@@ -203,11 +203,13 @@ strong {
 .card-title {
     margin-top: 15px;
     margin-bottom: 20px;
+    font-size: 26px;
 }
 
 .card-title-bottom {
     padding-left: 3%;
-    margin: 0 0 20px 0;
+    margin: 0 0 40px 0;
+    font-size: 26px;
 }
 
 .conteneur_hebergement {
@@ -305,6 +307,7 @@ strong {
     border-radius: 20px;
     padding: 35px;
     width: 400px;
+    height: 600px;
     margin-left: 3%;
 }
 
@@ -325,6 +328,10 @@ strong {
 }
 
 .card-aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     width: 345px;
     height: 145px;
     padding: 5px;
@@ -335,15 +342,35 @@ strong {
 }
 
 .card-img-aside {
-    height: 180px;
+    height: 145px;
+    width: 40%;
     position: relative;
     overflow: hidden;
     border-radius: 20px 0 0 20px;
 }
 
 .card-img-aside img {
-    height: auto;
-    /* Méthode de centrage en fonction de la taille de l'image */
+    width: 100%;
+    /* Méthode de centrage en fonction de la taille de l'image 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);*/
+    height: 144px;
+    object-fit: cover;
+}
+
+
+.card-body-aside {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.nuit-aside {
+    margin: 0 0 0 3%;
 }
 
 /* Activités */
