@@ -1,7 +1,16 @@
+:root {
+    --color-primary: #0065fc;
+    --color-secondary: #f2f2f2;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    width: 1400px;
+    max-width: 1400px;
+    margin: auto;
+    width: 100%;
 } 
 
 h2 {
@@ -11,7 +20,7 @@ h2 {
 
 /* NAVBAR */
 .navbar {
-    margin: 0 50px 0 50px;
+    margin: 0 45px 0 45px;
 }
 
 .navbar_conteneur
@@ -25,15 +34,17 @@ h2 {
     flex-direction: row;
     align-items: baseline;
     gap: 70px;
+    list-style-type: none;
+    margin: 0;
 }
 
 .navbar_element {
     padding-top: 50px;
-    font-weight: bold;
+    font-weight: 500px;
 }
 
 .logo {
-    height: 50px;
+    height: 20px;
 }
 
 .navbar_element:nth-child(1)
@@ -48,17 +59,22 @@ h2 {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--color-black);
+}
+
+.active {
+    border-top: 3px solid transparent;
 }
 
 .active:hover {
-    
-    border-top: solid #0065fc;
+    border-top: 3px solid var(--color-primary);
     text-align: center;
+    font-weight: bold;
+    color: var(--color-primary);
 }
 
-.lienActif {
-    color: #0065fc;
+.lienActif:hover {
+    color: var(--color-primary);
 }
 
 
@@ -67,9 +83,13 @@ a {
     margin: 20px 50px 20px 50px;
 }
 
-h1 {
-    font-size: x-large;
+.header_title {
+    font-size: 22px;
     font-weight: bold;
+}
+
+.header_p {
+    font-size: 16px;
 }
 
 /* Barre de recherche */
@@ -79,20 +99,20 @@ h1 {
     justify-content: flex-start;
 }
 
-input {
+input, .btn_submit {
     font-size: 20px;
 }
 
 .fa-location-dot {
-    color: black !important;
+    color: var(--color-black) !important;
 }
 
 .form_position {
     border-radius: 17px 0 0 17px;
     width: 50px;
     height: 50px;
-    border: 1px solid #f2f2f2;
-    background: #f2f2f2;
+    border: 1px solid var(--color-secondary);
+    background: var(--color-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,15 +131,15 @@ input[type="text"] {
     width: 200px;
     height: 50px;
     padding: 0 25px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid var(--color-secondary);
 }
 
-input[type="submit"] {
-    background: #0065fc;
-    color: white;
+.btn_submit {
+    background: var(--color-primary);
+    color: var(--color-white);
     width: 150px;
     height: 50px;
-    border: 1px solid #0065fc;
+    border: 1px solid var(--color-primary);
     border-radius: 0 17px 17px 0;
 }
 
@@ -156,7 +176,7 @@ input[type="submit"] {
 }
 
 .fa-solid {
-    color: #0065fc;
+    color: var(--color-primary);
     font-size: 20px;
 }
 
@@ -187,23 +207,25 @@ strong {
 
 .hebergement_populaire {
     display: flex;
-    align-items: center;
+    align-items: initial;
     justify-content: space-between;
     margin-bottom: 60px;
 }
 
 /* Hébergement */
 #hebergement {
-    background-color: #f2f2f2;
+    background-color: var(--color-secondary);
     border-radius: 20px;
     padding: 40px;
     width: 80%;
+    height: 100%;
 }
 
 .card-title {
     margin-top: 15px;
     margin-bottom: 20px;
     font-size: 26px;
+    margin-top: 0;
 }
 
 .card-title-bottom {
@@ -226,16 +248,17 @@ strong {
     height: 200px;
     padding: 5px;
     margin-bottom: 30px;
-    background-color: white;
+    background-color: var(--color-white);
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
 }
 
 .card-img {
     height: 110px;
     position: relative;
     overflow: hidden;
-    border-radius: 20px 20px 0 0;
+    border-radius: 17px 17px 0 0;
 }
 
 .card-img img {
@@ -247,7 +270,7 @@ strong {
     transform: translate(-50%, -50%);
 }
 
-.card {
+.card, .card-aside {
     /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
     -webkit-transition: all 1s ease; /* Safari et Chrome */
     -moz-transition: all 1s ease; /* Firefox */
@@ -256,7 +279,7 @@ strong {
     transition: all 1s ease;
 }
 
-.card:hover {
+.card:hover, .card-aside:hover {
     /* L'image est grossie de 15% */
     -webkit-transform:scale(1.15); /* Safari et Chrome */
     -moz-transform:scale(1.15); /* Firefox */
@@ -273,11 +296,11 @@ strong {
 
 .nomHotel {
     margin: 3%;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .nomHotel:hover {
-    color: #0065fc;
+    color: var(--color-primary);
 }
 
 .nuit {
@@ -290,12 +313,12 @@ strong {
 }
 
 .star-blue {
-    color: #0065fc;
+    color: var(--color-primary);
     font-size: 80%;
 }
 
 .star-grey {
-    color: #f2f2f2;
+    color: var(--color-secondary);
     font-size: 80%;
 }
 
@@ -303,11 +326,11 @@ strong {
 #populaire {
     display: flex;
     flex-wrap: wrap;
-    background-color: #f2f2f2;
+    background-color: var(--color-secondary);
     border-radius: 20px;
-    padding: 35px;
+    padding: 35px 29px;
     width: 400px;
-    height: 600px;
+    height: 100%;
     margin-left: 3%;
 }
 
@@ -332,21 +355,22 @@ strong {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 345px;
+    width: 100%;
     height: 145px;
     padding: 5px;
     margin-bottom: 30px;
-    background-color: white;
+    background-color: var(--color-white);
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
 }
 
 .card-img-aside {
-    height: 145px;
+    height: 100%;
     width: 40%;
     position: relative;
     overflow: hidden;
-    border-radius: 20px 0 0 20px;
+    border-radius: 17px 0 0 17px;
 }
 
 .card-img-aside img {
@@ -360,6 +384,10 @@ strong {
     object-fit: cover;
 }
 
+.nuit-aside {
+    font-size: 14px;
+    width: 100%;
+}
 
 .card-body-aside {
     display: flex;
@@ -367,6 +395,8 @@ strong {
     justify-content: space-between;
     flex-direction: column;
     margin-left: 15px;
+    width: calc(60% - 15px);
+    height: calc(100% - 10px);
 }
 
 .nuit-aside {
@@ -392,15 +422,17 @@ strong {
 }
 
 .card_text {
-    background-color: white;
-    padding-left: 20px;
+    background-color: var(--color-white);
+    padding-left: 5px;
+    font-size: 16px;
+    margin: 5%;
 }
 
 /* FOOTER */
 .page-footer {
     margin-left: 50px;
     margin-right: 25px;
-    background-color: #f2f2f2;
+    background-color: var(--color-secondary);
     padding: 20px 250px 40px 55px;
 }
 
@@ -410,8 +442,7 @@ strong {
     justify-content: space-between;
 }
 
-
-h2 {
+.footer_title {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 0;
@@ -419,7 +450,11 @@ h2 {
 
 .lien {
     display: block;
-    color: black;
+    color: var(--color-black);
     text-decoration: none;
     padding-top: 15px;
+}
+
+li {
+    list-style-type: none;
 }
