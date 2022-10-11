@@ -1,10 +1,14 @@
 @media screen and (max-width: 768px) {
     /* Navbar */
+    body {
+        width: 768px !important;
+    }
+
     .navbar {
         margin: 0;
     }
     
-    .conteneur {
+    .navbar_conteneur {
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -17,7 +21,7 @@
         gap: 0;
     }
 
-    .element {
+    .navbar_element {
         padding-bottom: 10px;
     }
 
@@ -30,6 +34,7 @@
     .active {
         border-top: none;
         border-bottom: solid #0065fc;
+        text-align: center;
     }
 
     .inactive {
@@ -39,11 +44,11 @@
 
     .element:nth-child(2)
     {
-        flex: 6;
+        flex: none;
     }
     .element:nth-child(3)
     {
-        flex: 1;
+        flex: none;
     }
 
     /* HEADER */
@@ -79,11 +84,62 @@
         margin-right: 10px;
     }
 
+    /* CONTENU PRINCIPAL */
+    .main {
+        margin: 20px !important;
+    }
+
+    .hebergement_populaire {
+        flex-direction: column-reverse !important;
+    }
+
+    #hebergement {
+        background-color: white;
+        padding: 0;
+    }
+
+    .conteneur_hebergement {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card {
+        width: 335px;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .nomHotel, .nuit, .star {
+        margin: 8px 0 0 10px;
+        font-size: 16px !important;
+    }
+
+    /* Activités */
+    .block_activite {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card_activite {
+        width: 335px;
+        height: 190px;
+        margin-bottom: 25px;
+    }
+
+    .card_img_activite {
+        width: 334px !important;
+        height: 135px !important;
+    }
 
     /* FOOTER */
     .page-footer {
         background-color: #f2f2f2;
         padding: 20px 250px 40px 30px;
+        margin: 0;
     }
 
     .container-footer {
