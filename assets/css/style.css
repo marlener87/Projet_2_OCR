@@ -152,6 +152,11 @@ input[type="text"] {
     margin: 30px 0 30px 0;
 }
 
+.ensemble_btn_filtre {
+    display: flex;
+    flex-direction: row;
+}
+
 .btn-filtre {
     display: flex;
     align-items: center;
